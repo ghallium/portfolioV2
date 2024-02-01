@@ -14,9 +14,9 @@ function Header() {
                     </Link>
                 </div>
                 <nav className="text-xl text-ghgrey dark:text-white uppercase space-x-3">
-                    <Link to="/about" className="hover:text-ghgreen hover:font-medium transition-all">à propos</Link>
-                    <Link to="/projects" className="hover:text-ghgreen hover:font-medium transition-all">projets</Link>
-                    <Link to="/contact" className="hover:text-ghgreen hover:font-medium transition-all">contact</Link>
+                    <Link to="/about" className="hover:text-ghgreen hover:font-medium transition-all active:text-ghgreen focus:text-ghgreen">à propos</Link>
+                    <Link to="/projects" className="hover:text-ghgreen hover:font-medium transition-all active:text-ghgreen focus:text-ghgreen">projets</Link>
+                    <Link to="/contact" className="hover:text-ghgreen hover:font-medium transition-all active:text-ghgreen focus:text-ghgreen">contact</Link>
                 </nav>
         </header>
     </div>

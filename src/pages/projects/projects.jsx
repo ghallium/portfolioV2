@@ -30,7 +30,7 @@ function Projects() {
 
   return (
     <>
-      <div className=" bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-white py-5">
+      <div className=" bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-100 py-5">
         <div className="flex w-full lg:w-3/4 mx-auto">
           <div className="filters-area w-full lg:w-1/12">
             <h2 className="uppercase mb-4">Filtres</h2>

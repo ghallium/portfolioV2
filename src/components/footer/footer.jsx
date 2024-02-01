@@ -4,7 +4,7 @@
 function Footer() {
     
     return (
-        <footer className="text-zinc-700 dark:bg-zinc-900 dark:text-white">
+        <footer className="text-zinc-700 dark:bg-zinc-900 dark:text-zinc-100">
            <div className="w-full lg:w-3/4 mx-auto text-xl py-2 text-center">
                 <p>© Guillaume ROBERT - 2024</p>
                 <div className="footer-socialicons space-x-5">

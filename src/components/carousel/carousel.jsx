@@ -20,20 +20,20 @@ export default function Carousel() {
 
     return (
         <div className="carousel_container">  
-          <div className="slider">
+          <div className="slider relative">
           {images.length > 1 && (
-            <div className="vectorPrev" onClick={prevSlide}>
-              <i class="fa-sharp fa-solid fa-arrow-left"></i>
+            <div className="vectorPrev bg-zinc-800 dark:bg-zinc-100 p-1 rounded-md text-5xl absolute top-56 left-2 cursor-pointer" onClick={prevSlide}>
+              <i className="fa-sharp fa-solid fa-arrow-left dark:text-zinc-700"></i>
             </div>
           )}
           {images.length > 1 && (
-            <div className="vectorNext" onClick={nextSlide}>
-              <i class="fa-sharp fa-solid fa-arrow-right"></i>  
+            <div className="vectorNext bg-zinc-800 dark:bg-zinc-100 p-1 rounded-md text-5xl absolute top-56 right-2 cursor-pointer" onClick={nextSlide}>
+              <i className="fa-sharp fa-solid fa-arrow-right dark:text-zinc-700"></i>  
             </div>
           )}
           {images.map((img, index) => {
           return (
-            <div className="slider_container" key={index}>
+            <div className="slider_container w-full lg:w-[900px]" key={index}>
               {index === current && (
                 <img
                   src={img}
@@ -42,9 +42,9 @@ export default function Carousel() {
                 />
               )}
               {index === current && (
-                <strong className="image-number">
+                <span className="image-number bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-700 font-bold p-1 rounded-md absolute right-3 bottom-2">
                   {current + 1}/{images.length}
-                </strong>
+                </span>
               )}
             </div>
           );

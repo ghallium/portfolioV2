@@ -33,7 +33,7 @@ function Contact() {
       useEffect(() => {
         if (input.endsWith(konamiSequence)) {
           // Do something when the Konami Code is entered
-          document.querySelector('.contact-pageblock').style.background="#464747"
+          
           document.querySelector(".cover").style.background = "black url(" + codecCover + ") no-repeat center";
           playZeldaSound();
           
@@ -50,7 +50,7 @@ function Contact() {
           (result) => {
             console.log(result.text);
             // Display a pop-up message indicating that the email has been sent
-            alert("Votre message a été envoyé !");
+            alert("Votre message a bien été envoyé !");
             // Reset the form
             e.target.reset();
           },
@@ -62,10 +62,12 @@ function Contact() {
       
 
     return (
-        <div className="contact-pageblock">
+      <>
+        <div className="contact bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-100">
+          <div className="contact-pageblock w-full lg:w-2/3 mx-auto">
             <div className="contact-coverimage">
                 <div className="cover">
-                    <h1>contact</h1>
+                    
                 </div>
             </div>
             <div className="contactform-container">
@@ -91,7 +93,9 @@ function Contact() {
 
                 </form>
             </div>
+            </div>
         </div>
+      </>  
     )
 }
 

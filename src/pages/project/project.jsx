@@ -7,7 +7,18 @@ import Carousel from "../../components/carousel/carousel";
 
 export default function Projet() {
   let { id } = useParams();
-  const foundProject = data.find((projet) => projet.id === id);
+  const currentIndex = data.findIndex((projet) => projet.id === id);
+
+  if (currentIndex === -1) {
+    return <Error />;
+  }
+
+  const previousIndex = (currentIndex - 1 + data.length) % data.length;
+  const nextIndex = (currentIndex + 1) % data.length;
+
+  const foundProject = data[currentIndex];
+  const previousProject = data[previousIndex];
+  const nextProject = data[nextIndex];
 
   if (!foundProject) {
     return <Error />;
@@ -44,7 +55,7 @@ export default function Projet() {
               <p className="projet_description mb-3">
                 {foundProject.description}
               </p>
-              <div className="project_links flex mb-24 space-x-2">
+              <div className="project_links flex mb-12 space-x-2">
                 <a
                   href={foundProject.github_link}
                   target="_blank"
@@ -67,11 +78,25 @@ export default function Projet() {
                   </a>
                 ) : null}
               </div>
-              <div className="backtoprojects font-bold hover:text-ghgreen transition-all">
-                <i className="fa-solid fa-circle-arrow-left"></i>
-                <Link to="/projects" className="mx-2">
-                  Revenir aux projets
-                </Link>
+              <div className="next-previous-back-projects text-sm font-bold uppercase flex justify-between items-center">
+                <div className="previous hover:text-ghgreen transition-all">
+                  <i className="fa-solid fa-circle-arrow-left"></i>
+                  <Link to={`/projet/${previousProject.id}`} className="mx-1">
+                    Projet précédent
+                  </Link>
+                </div>
+                <div className="backto hover:text-ghgreen transition-all"> 
+                  <i className="fa-solid fa-circle-arrow-up"></i>
+                  <Link to="/projects" className="mx-1">
+                    Revenir aux projets
+                  </Link>
+                </div>
+                <div className="next hover:text-ghgreen transition-all">
+                  <i className="fa-solid fa-circle-arrow-right"></i>
+                  <Link to={`/projet/${nextProject.id}`} className="mx-1">
+                    Projet suivant
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

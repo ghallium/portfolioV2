@@ -1,0 +1,85 @@
+  .word-animation span {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    
+    
+}
+
+/* ANIMATION */
+
+.word-animation span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+.word-animation:nth-child(1) {
+  font-weight: 300;
+  animation: txt-appearance 0s 1s forwards;
+}
+.word-animation:nth-child(2) {
+  animation: txt-appearance 0s 1.25s forwards;
+}
+.word-animation:nth-child(1) span::after {
+  background: white;
+  animation: slide-in 0.75s ease-out forwards,
+  slide-out 0.75s 1s ease-out forwards;
+}
+.word-animation:nth-child(2) span::after {
+  background: #707070;
+  animation: slide-in 0.75s 0.3s ease-out forwards,
+  slide-out 0.75s 1.3s ease-out forwards;
+}
+
+.stack-tech {
+    animation: fadeInY 0.75s ease-out forwards;
+    animation-delay: 1.2s;
+}
+
+.more-info {
+    animation: fadeInX 0.75s ease-out forwards;
+    animation-delay: 1.9s;
+}
+
+@keyframes slide-in {
+  100% {
+      transform: translateX(0%);
+  }
+}
+@keyframes slide-out {
+  100% {
+      transform: translateX(100%)
+  }
+}
+@keyframes txt-appearance {
+  100% {
+      color: white;
+  }
+}
+
+@keyframes fadeInY {
+    0% {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInX {
+  0% {
+      transform: scaleX(0);
+      opacity: 0;
+  }
+  100% {
+      transform: scaleX(1);
+      opacity: 1;
+  }
+}

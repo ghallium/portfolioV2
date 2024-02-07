@@ -14,12 +14,12 @@ function Error() {
         <div className="error-info">
             <h1 className="text-9xl py-6 mx-5 font-light">4<span className="text-ghgreen font-bold">04</span></h1>
             <div className="mx-5">
-                <p className="mb-4">La page que vous avez demandé n'existe pas.</p>
-                <a href="/" className="font-bold hover:text-ghgreen transition-all">Revenir à la page d'accueil</a>
+                <p className="text-5xl mb-6 font-light">La page que vous avez demandé n'existe pas.</p>
+                <a href="/" className="font-bold text-4xl hover:text-ghgreen transition-all">Revenir à la page d'accueil</a>
             </div>
         </div>
     </div>
     )
 }
 
-export default Error 
+export default Error; 

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import zeldaSound from "../../assets/zelda-secret-sound.mp3";
 import imgGameBoy from "../../assets/game-boy-portrait.jpg";
-import zeldaSecret from "../../assets/zeldaSecret.png"
+import zeldaSecret from "../../assets/zeldaSecret.png";
+import "./about.css";
 
 
 function About() {
@@ -42,8 +43,10 @@ const [input, setInput] = useState("");
   }, [input]);
 
   return (
-    <div className="flex bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-white">
-    <div className="about_image">
+    <>
+    <div className="bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-white">
+    <div className="flex w-full lg:w-3/4 mx-auto">
+    <div className="about_image w-full lg:w-[1800px]">
         <img src={imgGameBoy} alt="une game boy avec ma tête pixellisée"></img>
       </div>
     <div className="about_container">
@@ -66,6 +69,8 @@ const [input, setInput] = useState("");
       </div>
     </div>
     </div>
+    </div>
+    </>
   );
 }
 

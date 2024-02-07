@@ -23,12 +23,12 @@ export default function Carousel() {
           <div className="slider relative">
           {images.length > 1 && (
             <div className="vectorPrev bg-zinc-800 dark:bg-zinc-100 p-1 rounded-md text-5xl absolute top-56 left-2 cursor-pointer" onClick={prevSlide}>
-              <i className="fa-sharp fa-solid fa-arrow-left dark:text-zinc-700"></i>
+              <i className="fa-sharp fa-solid fa-arrow-left text-zinc-100 dark:text-zinc-700"></i>
             </div>
           )}
           {images.length > 1 && (
             <div className="vectorNext bg-zinc-800 dark:bg-zinc-100 p-1 rounded-md text-5xl absolute top-56 right-2 cursor-pointer" onClick={nextSlide}>
-              <i className="fa-sharp fa-solid fa-arrow-right dark:text-zinc-700"></i>  
+              <i className="fa-sharp fa-solid fa-arrow-right text-zinc-100 dark:text-zinc-700"></i>  
             </div>
           )}
           {images.map((img, index) => {
@@ -42,7 +42,7 @@ export default function Carousel() {
                 />
               )}
               {index === current && (
-                <span className="image-number bg-zinc-800 dark:bg-zinc-100 dark:text-zinc-700 font-bold p-1 rounded-md absolute right-3 bottom-2">
+                <span className="image-number bg-zinc-800 text-zinc-100 dark:bg-zinc-100 dark:text-zinc-700 font-bold p-1 rounded-md absolute right-3 bottom-2">
                   {current + 1}/{images.length}
                 </span>
               )}

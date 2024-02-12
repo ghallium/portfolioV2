@@ -1,33 +1,41 @@
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 function Header() {
+  let navLinks; 
+
+  const onToggleMenu = (e) => {
+    e.target.name = e.target.name === 'menu' ? 'close' : 'menu';
+    navLinks.classList.toggle('top-[9%]');
+  };
+
+  useEffect(() => {
+    navLinks = document.querySelector('.nav-links');
+  }, []);
+
   return (
     <>
-      <div className="dark:bg-zinc-900">
-      <header className="bg-white w-full lg:w-3/4 mx-auto">
-        <nav className="flex justify-between items-center w-[92%]  mx-auto">
-            <div>
-                <img className="w-16 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="..." />
+      <div className="dark:bg-zinc-900 text-ghgrey">
+      <header className="bg-white w-11/12 py-2 lg:w-3/4 mx-auto">
+        <nav className="flex justify-between items-center">
+            <div className="header_title transition-transform 
+            animate-[slide-out-right_500ms_ease-in-out]">
+              <Link to="/">
+                <h1 className="text-2xl lg:text-4xl text-ghgrey dark:text-zinc-100 font-light">Guillaume <span className="text-ghgreen font-bold">Robert</span></h1>
+                <p className="text-lg lg:text-xl text-ghgrey dark:text-zinc-100">Développeur <span className="text-ghgreen font-bold">front end</span></p>
+              </Link>
             </div>
             <div
-                className="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-                <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
-                    <li>
-                        <a className="hover:text-gray-500" href="#">Products</a>
-                    </li>
-                    <li>
-                        <a className="hover:text-gray-500" href="#">Solution</a>
-                    </li>
-                    <li>
-                        <a className="hover:text-gray-500" href="#">Resource</a>
-                    </li>
-                    <li>
-                        <a className="hover:text-gray-500" href="#">Developers</a>
-                    </li>
-                    <li>
-                        <a className="hover:text-gray-500" href="#">Pricing</a>
-                    </li>
+                className="nav-links text-lg duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul className="flex uppercase md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li><Link to="/about" className="hover:text-ghgreen hover:font-medium transition-all active:text-ghgreen focus:text-ghgreen">à propos</Link></li>
+                    <li><Link to="/projects" className="hover:text-ghgreen hover:font-medium transition-all active:text-ghgreen focus:text-ghgreen">projets</Link></li>
+                    <li><Link to="/contact" className="hover:text-ghgreen hover:font-medium transition-all active:text-ghgreen focus:text-ghgreen">contact</Link></li>
                 </ul>
+            </div>
+            <div>
+              <ion-icon onClick={(e) => onToggleMenu(e)} name="menu" className="w-16 text-3xl cursor-pointer md:hidden"></ion-icon>
+
             </div>
           </nav>    
             

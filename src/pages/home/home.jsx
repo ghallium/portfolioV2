@@ -5,20 +5,20 @@ import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className=" bg-ghgreen dark:bg-zinc-800 text-white">
-      <div className="home_mainblock w-full lg:w-3/4 py-6 mx-auto">
-        <p className="word-animation text-7xl">
+      <div className="home_mainblock w-11/12 lg:w-3/4 py-6 mx-auto">
+        <p className="word-animation text-3xl lg:text-7xl">
           <span className="py-2">Bonjour, je suis <span className="dark:text-ghgreen inline-block">développeur web...</span></span>
         </p>
 
-        <p className="word-animation text-4xl mb-8">
+        <p className="word-animation text-xl lg:text-4xl mb-8">
           <span>...et plus précisément développeur front end.</span>
         </p>
-        <div className="stack-tech opacity-0 py-4">
-          <p className="text-4xl underline mb-8 dark:text-ghgreen">Ma stack :</p>
-          <ul className="flex flex-wrap space-x-3 mb-6">
+        <div className="stack-tech opacity-0 py-2 lg:py-4">
+          <p className="text-2xl lg:text-4xl underline mb-8 dark:text-ghgreen">Ma stack :</p>
+          <ul className="flex flex-wrap justify-between lg:justify-normal lg:space-x-3 mb-6">
             <li className="flex items-center space-x-2 hover:animate-bounce">
               <svg
-                className="w-16"
+                className="w-8 lg:w-16 mb-3 lg:mb-0"
                 fill="#ffffff"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -46,11 +46,11 @@ function Home() {
                   </g>{" "}
                 </g>
               </svg>
-              <span>HTML</span>
+              <span className="text-sm lg:text-base">HTML</span>
             </li>
             <li className="flex items-center space-x-2 hover:animate-bounce">
               <svg
-                className="w-16"
+                className="w-8 lg:w-16 mb-3 lg:mb-0"
                 fill="#ffffff"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -78,11 +78,11 @@ function Home() {
                   </g>{" "}
                 </g>
               </svg>
-              <span>CSS</span>
+              <span className="text-sm lg:text-base">CSS</span>
             </li>
             <li className="flex items-center space-x-2 hover:animate-bounce">
               <svg
-                className="w-16"
+                className="w-8 lg:w-16 mb-3 lg:mb-0"
                 fill="#ffffff"
                 viewBox="0 0 32 32"
                 version="1.1"
@@ -100,11 +100,11 @@ function Home() {
                   <path d="M17.313 14.789h-2.809c0 2.422-0.011 4.829-0.011 7.254 0.033 0.329 0.051 0.712 0.051 1.099 0 0.81-0.081 1.601-0.236 2.365l0.013-0.076c-0.412 0.861-1.475 0.751-1.957 0.6-0.451-0.242-0.808-0.609-1.031-1.055l-0.006-0.014c-0.044-0.094-0.097-0.174-0.16-0.246l0.001 0.001-2.281 1.406c0.367 0.79 0.934 1.434 1.637 1.885l0.018 0.011c0.763 0.427 1.675 0.678 2.645 0.678 0.484 0 0.954-0.063 1.401-0.18l-0.038 0.009c0.988-0.248 1.793-0.89 2.254-1.744l0.009-0.019c0.359-0.914 0.566-1.973 0.566-3.080 0-0.388-0.026-0.77-0.075-1.145l0.005 0.044c0.015-2.567 0-5.135 0-7.722zM28.539 23.843c-0.219-1.368-1.11-2.518-3.753-3.59-0.92-0.431-1.942-0.731-2.246-1.425-0.063-0.158-0.099-0.341-0.099-0.532 0-0.124 0.015-0.244 0.044-0.359l-0.002 0.010c0.208-0.55 0.731-0.935 1.343-0.935 0.199 0 0.388 0.040 0.559 0.113l-0.009-0.004c0.552 0.19 0.988 0.594 1.215 1.112l0.005 0.013c1.292-0.845 1.292-0.845 2.193-1.406-0.216-0.369-0.459-0.689-0.734-0.977l0.002 0.002c-0.767-0.814-1.852-1.32-3.056-1.32-0.171 0-0.34 0.010-0.505 0.030l0.020-0.002-0.881 0.111c-0.856 0.194-1.587 0.639-2.133 1.252l-0.003 0.004c-0.535 0.665-0.859 1.519-0.859 2.449 0 1.279 0.613 2.415 1.56 3.131l0.010 0.007c1.706 1.275 4.2 1.555 4.519 2.755 0.3 1.462-1.087 1.931-2.457 1.762-0.957-0.218-1.741-0.83-2.184-1.652l-0.009-0.017-2.287 1.313c0.269 0.536 0.607 0.994 1.011 1.385l0.001 0.001c2.174 2.194 7.61 2.082 8.586-1.255 0.113-0.364 0.178-0.782 0.178-1.215 0-0.3-0.031-0.593-0.091-0.875l0.005 0.028zM1.004 1.004h29.991v29.991h-29.991z"></path>{" "}
                 </g>
               </svg>
-              <span>JavaScript</span>
+              <span className="text-sm lg:text-base">JavaScript</span>
             </li>
             <li className="flex items-center space-x-2 hover:animate-bounce">
               <svg
-                className="w-16"
+                className="w-8 lg:w-16 mb-3 lg:mb-0"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#ffffff"
@@ -122,11 +122,11 @@ function Home() {
                   <path d="M12,10.11A1.87,1.87,0,1,1,10.13,12,1.88,1.88,0,0,1,12,10.11M7.37,20c.63.38,2-.2,3.6-1.7a24.22,24.22,0,0,1-1.51-1.9A22.7,22.7,0,0,1,7.06,16c-.51,2.14-.32,3.61.31,4m.71-5.74-.29-.51a7.91,7.91,0,0,0-.29.86c.27.06.57.11.88.16l-.3-.51m6.54-.76.81-1.5-.81-1.5c-.3-.53-.62-1-.91-1.47C13.17,9,12.6,9,12,9s-1.17,0-1.71,0c-.29.47-.61.94-.91,1.47L8.57,12l.81,1.5c.3.53.62,1,.91,1.47.54,0,1.11,0,1.71,0s1.17,0,1.71,0c.29-.47.61-.94.91-1.47M12,6.78c-.19.22-.39.45-.59.72h1.18c-.2-.27-.4-.5-.59-.72m0,10.44c.19-.22.39-.45.59-.72H11.41c.2.27.4.5.59.72M16.62,4c-.62-.38-2,.2-3.59,1.7a24.22,24.22,0,0,1,1.51,1.9,22.7,22.7,0,0,1,2.4.36c.51-2.14.32-3.61-.32-4m-.7,5.74.29.51a7.91,7.91,0,0,0,.29-.86c-.27-.06-.57-.11-.88-.16l.3.51m1.45-7c1.47.84,1.63,3.05,1,5.63,2.54.75,4.37,2,4.37,3.68s-1.83,2.93-4.37,3.68c.62,2.58.46,4.79-1,5.63s-3.45-.12-5.37-1.95c-1.92,1.83-3.91,2.79-5.38,1.95s-1.62-3-1-5.63c-2.54-.75-4.37-2-4.37-3.68S3.08,9.07,5.62,8.32c-.62-2.58-.46-4.79,1-5.63s3.46.12,5.38,1.95c1.92-1.83,3.91-2.79,5.37-1.95M17.08,12A22.51,22.51,0,0,1,18,14.26c2.1-.63,3.28-1.53,3.28-2.26S20.07,10.37,18,9.74A22.51,22.51,0,0,1,17.08,12M6.92,12A22.51,22.51,0,0,1,6,9.74c-2.1.63-3.28,1.53-3.28,2.26S3.93,13.63,6,14.26A22.51,22.51,0,0,1,6.92,12m9,2.26-.3.51c.31,0,.61-.1.88-.16a7.91,7.91,0,0,0-.29-.86l-.29.51M13,18.3c1.59,1.5,3,2.08,3.59,1.7s.83-1.82.32-4a22.7,22.7,0,0,1-2.4.36A24.22,24.22,0,0,1,13,18.3M8.08,9.74l.3-.51c-.31,0-.61.1-.88.16a7.91,7.91,0,0,0,.29.86l.29-.51M11,5.7C9.38,4.2,8,3.62,7.37,4s-.82,1.82-.31,4a22.7,22.7,0,0,1,2.4-.36A24.22,24.22,0,0,1,11,5.7Z"></path>{" "}
                 </g>
               </svg>
-              <span>React</span>
+              <span className="text-sm lg:text-base">React</span>
             </li>
             <li className="flex items-center space-x-2 hover:animate-bounce">
               <svg
-                className="w-16"
+                className="w-8 lg:w-16 mb-3 lg:mb-0"
                 fill="#ffffff"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -146,11 +146,11 @@ function Home() {
                   ></path>
                 </g>
               </svg>
-              <span>Tailwind</span>
+              <span className="text-sm lg:text-base">Tailwind</span>
             </li>
             <li className="flex items-center space-x-2 hover:animate-bounce">
               <svg
-                className="bi bi-bootstrap-fill w-16"
+                className="bi bi-bootstrap-fill w-8 lg:w-16 mb-3 lg:mb-0"
                 viewBox="0 0 16 16"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#ffffff"
@@ -167,11 +167,11 @@ function Home() {
                   <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4h-8zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396H5.062z"></path>{" "}
                 </g>
               </svg>
-              <span>Bootstrap</span>
+              <span className="text-sm lg:text-base">Bootstrap</span>
             </li>
             <li className="flex items-center space-x-2 hover:animate-bounce">
               <svg
-                className="w-16"
+                className="w-8 lg:w-16 mb-3 lg:mb-0"
                 viewBox="0 0 48 48"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#ffffff"
@@ -202,13 +202,13 @@ function Home() {
                   </g>{" "}
                 </g>
               </svg>
-              <span>Node.js</span>
+              <span className="text-sm lg:text-base">Node.js</span>
             </li>
           </ul>
         </div>
         <div className="more-info opacity-0 py-4">
-          <p className="text-4xl mb-6">Voulez-vous <span className="text-ghgreen">en savoir plus ?</span></p>
-          <div className="flex flex-col text-lg font-medium mx-10">
+          <p className="text-2xl lg:text-4xl mb-4 lg:mb-6">Voulez-vous <span className="dark:text-ghgreen">en savoir plus ?</span></p>
+          <div className="flex flex-col text-base lg:text-lg font-medium mx-10">
             <Link
               to="about"
               className="py-2 hover:scale-105 hover:font-bold dark:hover:text-ghgreen transition-all"

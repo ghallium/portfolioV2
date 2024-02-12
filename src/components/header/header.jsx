@@ -16,7 +16,7 @@ function Header() {
   return (
     <>
       <div className="dark:bg-zinc-900 text-ghgrey">
-      <header className="bg-white w-11/12 py-2 lg:w-3/4 mx-auto">
+      <header className="w-11/12 py-2 lg:w-3/4 mx-auto">
         <nav className="flex justify-between items-center">
             <div className="header_title transition-transform 
             animate-[slide-out-right_500ms_ease-in-out]">
@@ -26,7 +26,7 @@ function Header() {
               </Link>
             </div>
             <div
-                className="nav-links text-lg duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                className="nav-links text-lg duration-500 z-10 md:static absolute bg-white dark:bg-zinc-900 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
                 <ul className="flex uppercase md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li><Link to="/about" className="hover:text-ghgreen hover:font-medium transition-all active:text-ghgreen focus:text-ghgreen">à propos</Link></li>
                     <li><Link to="/projects" className="hover:text-ghgreen hover:font-medium transition-all active:text-ghgreen focus:text-ghgreen">projets</Link></li>

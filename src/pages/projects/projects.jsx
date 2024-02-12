@@ -32,60 +32,60 @@ function Projects() {
   return (
     <>
       <div className=" bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-100 py-5">
-        <div className="flex w-full lg:w-3/4 mx-auto">
-          <div className="filters-area opacity-0 w-full lg:w-1/12">
+        <div className="flex flex-col lg:flex-row w-11/12 lg:w-3/4 mx-auto">
+          <div className="filters-area opacity-0 w-11/12 lg:w-1/12">
             <h2 className="uppercase mb-4">Filtres</h2>
-            <ul>
-              <li>
+            <ul className="flex flex-wrap lg:flex-col">
+              <li className="flex">
                 <input
                   type="checkbox"
                   onChange={() => handleTagToggle("HTML / CSS")}
                 />
                 <label className="mx-2">HTML / CSS</label>
               </li>
-              <li>
+              <li className="flex">
                 <input
                   type="checkbox"
                   onChange={() => handleTagToggle("Javascript")}
                 />
-                <label className="mx-2">Javascript</label>
+                <label className="mx-2">JavaScript</label>
               </li>
-              <li>
+              <li className="flex">
                 <input
                   type="checkbox"
                   onChange={() => handleTagToggle("React")}
                 />
                 <label className="mx-2">React</label>
               </li>
-              <li>
+              <li className="flex">
                 <input
                   type="checkbox"
                   onChange={() => handleTagToggle("Vite")}
                 />
                 <label className="mx-2">Vite</label>
               </li>
-              <li>
+              <li className="flex">
                 <input
                   type="checkbox"
                   onChange={() => handleTagToggle("Tailwind")}
                 />
                 <label className="mx-2">Tailwind</label>
               </li>
-              <li>
+              <li className="flex">
                 <input
                   type="checkbox"
                   onChange={() => handleTagToggle("Node.js")}
                 />
                 <label className="mx-2">Node.js</label>
               </li>
-              <li>
+              <li className="flex">
                 <input
                   type="checkbox"
                   onChange={() => handleTagToggle("MongoDB")}
                 />
                 <label className="mx-2">MongoDB</label>
               </li>
-              <li>
+              <li className="flex">
                 <input
                   type="checkbox"
                   onChange={() => handleTagToggle("Sass")}
@@ -95,7 +95,7 @@ function Projects() {
               {/* Ajoutez des gestionnaires pour les autres checkboxes */}
             </ul>
           </div>
-          <div className="projects-area w-full lg:w-11/12">
+          <div className="projects-area w-11/12">
             <h2 className="text-5xl opacity-0 font-light py-3 mb-6 mx-0 lg:mx-14">
               Pr<span className="text-ghgreen font-bold">ojets</span>
             </h2>

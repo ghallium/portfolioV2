@@ -46,9 +46,9 @@ const [input, setInput] = useState("");
   return (
     <>
     <div className="bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-white">
-    <div className="flex w-full lg:w-3/4 mx-auto">
-    <div className="about-image w-full opacity-0 lg:w-[1800px]">
-        <img src={imgGameBoy} alt="une game boy avec ma tête pixellisée"></img>
+    <div className="flex flex-col lg:flex-row w-full lg:w-3/4 mx-auto">
+    <div className="about-image w-full h-48 overflow-hidden lg:h-auto opacity-0 lg:w-[1800px]">
+        <img src={imgGameBoy} className="object-cover object-right-bottom" alt="une game boy avec ma tête pixellisée"></img>
       </div>
     <div className="about_container">
       <div className="about_info">
@@ -56,13 +56,13 @@ const [input, setInput] = useState("");
         <div className="about_content w-10/12">
           
           <div className="about_text opacity-0 mx-5">
-            <p className="text-xl font-light mb-8">
+            <p className="text-base lg:text-xl font-light mb-8">
             Hey bonjour ! Moi c'est Guillaume Robert et je suis développeur web en reconversion professionnelle après avoir auparavant travaillé dans des domaines comme le graphisme ou la rédaction web. Après 7 mois de formation à distance chez OpenClassrooms, j'ai acquis un certain nombre de compétences comme apprendre à <span className="text-ghgreen font-medium">intégrer une maquette</span> et la transformer en site fonctionnel, concevoir un site e-commerce en <span className="text-ghgreen font-medium">JavaScript</span>, découvrir le fonctionnement des <span className="text-ghgreen font-medium">API REST</span> et de node.js ou encore pratiquer le framework <span className="text-ghgreen font-medium">React</span>. 
             </p>
-            <p className="text-xl font-light mb-8">
+            <p className="text-base lg:text-xl font-light mb-8">
             Lorsque je ne suis pas devant Visual Studio Code, je m'intéresse à tout ce qui touche de près ou de loin à la culture populaire : cinéma, bande-dessinée, manga et séries télévisées. Je suis également un passionné de jeux vidéo depuis mon plus jeune âge et pratique le streaming à mes heures perdues. Aussi, j'aime bien les chiens (et les chats), la culture hip-hop et manger des pizzas.   
             </p>
-            <p className="text-xl font-light mb-8">
+            <p className="text-base lg:text-xl font-light mb-8">
               Vous souhaitez en savoir plus sur mes compétences et mon expérience ? N'hésitez pas à consulter mon <Link to="https://guillaume-robert-devweb.fr/online-resume/index.html" className="font-medium hover:text-ghgreen transition-all">CV en ligne</Link> ainsi que mes <Link to="/projects" className="font-medium hover:text-ghgreen transition-all">projets</Link> ! 
             </p>
           </div>

@@ -1,0 +1,50 @@
+.filters-area {
+    animation: unfoldY 0.75s ease-out forwards;
+    animation-delay: 0.4s;
+}
+
+.projects-area h2 {
+    animation: slide-out-right 0.75s ease-out forwards;
+    animation-delay: 1s;
+}
+
+.projects-container {
+    animation: unfoldX 0.75s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes unfoldY {
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+@keyframes unfoldX {
+    0% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+@keyframes slide-out-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-25%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

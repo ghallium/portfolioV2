@@ -4,21 +4,34 @@ function Header() {
   return (
     <>
       <div className="dark:bg-zinc-900">
-        <header className="w-full lg:w-3/4 mx-auto py-2 flex justify-between items-center">
-          <div className="header_title transition-transform 
-          animate-[slide-out-right_500ms_ease-in-out]">
-            <Link to="/">
-              <h1 className="text-4xl text-ghgrey dark:text-zinc-100 font-light">Guillaume <span className="text-ghgreen font-bold">Robert</span></h1>
-              <p className="text-xl text-ghgrey dark:text-zinc-100">Développeur <span className="text-ghgreen font-bold">front end</span></p>
-            </Link>
-          </div>
-          <nav className="text-xl text-ghgrey dark:text-zinc-100 uppercase space-x-3
-          transition-transform animate-[slide-out-down_500ms_ease-in-out]">
-            <Link to="/about" className="hover:text-ghgreen hover:font-medium transition-all active:text-ghgreen focus:text-ghgreen">à propos</Link>
-            <Link to="/projects" className="hover:text-ghgreen hover:font-medium transition-all active:text-ghgreen focus:text-ghgreen">projets</Link>
-            <Link to="/contact" className="hover:text-ghgreen hover:font-medium transition-all active:text-ghgreen focus:text-ghgreen">contact</Link>
-          </nav>
-        </header>
+      <header className="bg-white w-full lg:w-3/4 mx-auto">
+        <nav className="flex justify-between items-center w-[92%]  mx-auto">
+            <div>
+                <img className="w-16 cursor-pointer" src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png" alt="..." />
+            </div>
+            <div
+                className="nav-links duration-500 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
+                    <li>
+                        <a className="hover:text-gray-500" href="#">Products</a>
+                    </li>
+                    <li>
+                        <a className="hover:text-gray-500" href="#">Solution</a>
+                    </li>
+                    <li>
+                        <a className="hover:text-gray-500" href="#">Resource</a>
+                    </li>
+                    <li>
+                        <a className="hover:text-gray-500" href="#">Developers</a>
+                    </li>
+                    <li>
+                        <a className="hover:text-gray-500" href="#">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+          </nav>    
+            
+      </header>
       </div>
     </>
   );

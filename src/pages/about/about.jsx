@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import zeldaSound from "../../assets/zelda-secret-sound.mp3";
 import imgGameBoy from "../../assets/game-boy-portrait.jpg";
-import zeldaSecret from "../../assets/zeldaSecret.png";
+import zeldaSecret from "../../assets/zeldaSecretv2.jpg";
 import "./about.css";
 
 
@@ -29,6 +29,7 @@ const [input, setInput] = useState("");
     if (input.endsWith(konamiSequence)) {
       // Do something when the Konami Code is entered
       imageElement.src = zeldaSecret;
+      document.querySelector(".about-image").style.background = "black url(" + zeldaSecret + ") no-repeat center";
       playZeldaSound();
 
       // Ajouter les classes Tailwind pour styliser l'image et la rendre visible

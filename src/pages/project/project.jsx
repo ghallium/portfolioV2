@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Error from "../error/error";
 import data from "../../data/projets.json";
 import Carousel from "../../components/carousel/carousel";
+import "./project.css";
 
 export default function Projet() {
   let { id } = useParams();
@@ -27,14 +28,14 @@ export default function Projet() {
       <>
         <div className="bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-100">
           <div className="project_pageblock flex w-full lg:w-3/4 mx-auto">
-            <div className="carousel_area">
+            <div className="carousel_area opacity-0">
               <Carousel />
             </div>
             <div className="projectcontents_area mx-0 lg:mx-5">
-              <h2 className="text-5xl py-4 text-ghgreen">
+              <h2 className="text-5xl opacity-0 py-4 text-ghgreen">
                 {foundProject.title}
               </h2>
-              <div className="tags_types py-4">
+              <div className="tags_types opacity-0 py-4">
                 <ul className="flex space-x-2 mb-2">
                   {foundProject.tags.map((tag) => (
                     <li
@@ -52,10 +53,10 @@ export default function Projet() {
                   {foundProject.status}
                 </span>
               </div>
-              <p className="projet_description mb-3">
+              <p className="project_description opacity-0 mb-3">
                 {foundProject.description}
               </p>
-              <div className="project_links flex mb-12 space-x-2">
+              <div className="project_links opacity-0 flex mb-12 space-x-2">
                 <a
                   href={foundProject.github_link}
                   target="_blank"
@@ -78,7 +79,7 @@ export default function Projet() {
                   </a>
                 ) : null}
               </div>
-              <div className="next-previous-back-projects text-sm font-bold uppercase flex justify-between items-center">
+              <div className="next-previous-back-projects opacity-0 text-sm font-bold uppercase flex justify-between items-center">
                 <div className="previous hover:text-ghgreen transition-all">
                   <i className="fa-solid fa-circle-arrow-left"></i>
                   <Link to={`/projet/${previousProject.id}`} className="mx-1">

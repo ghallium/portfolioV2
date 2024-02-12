@@ -1,0 +1,99 @@
+.carousel_area {
+    animation: unfoldCarousel 0.50s ease-out forwards;
+    animation-delay: 0.4s;
+}
+
+@keyframes unfoldCarousel {
+    0% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+.projectcontents_area h2 {
+    animation: slide-out-right 0.50s ease-out forwards;
+    animation-delay: 0.9s;
+}
+
+@keyframes slide-out-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-25%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.tags_types {
+    animation: unfoldTagsTypes 0.50s ease-out forwards;
+    animation-delay: 1.1s;
+}
+
+@keyframes unfoldTagsTypes {
+    0% {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleY(1);
+    }
+}
+
+.project_description {
+    animation: unfoldDescription 0.50s ease-out forwards;
+    animation-delay: 1.4s;
+}
+
+@keyframes unfoldDescription {
+    0% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+.project_links {
+    animation: apparition 0.30s ease-out forwards;
+    animation-delay: 1.6s;
+}
+
+@keyframes apparition {
+    0% {
+        opacity: 0;
+        
+    }
+    100% {
+        opacity: 1;
+        
+    }
+}
+
+.next-previous-back-projects {
+    animation: unfoldLinks 0.40s ease-out forwards;
+    animation-delay: 1.8s;
+}
+
+@keyframes unfoldLinks {
+    0% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}

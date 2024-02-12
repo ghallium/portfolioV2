@@ -7,14 +7,14 @@ function Home() {
     <div className=" bg-ghgreen dark:bg-zinc-800 text-white">
       <div className="home_mainblock w-full lg:w-3/4 py-6 mx-auto">
         <p className="word-animation text-7xl">
-          <span className="py-2">Bonjour, je suis développeur web...</span>
+          <span className="py-2">Bonjour, je suis <span className="dark:text-ghgreen inline-block">développeur web...</span></span>
         </p>
 
         <p className="word-animation text-4xl mb-8">
           <span>...et plus précisément développeur front end.</span>
         </p>
         <div className="stack-tech opacity-0 py-4">
-          <p className="text-4xl underline mb-8">Ma stack :</p>
+          <p className="text-4xl underline mb-8 dark:text-ghgreen">Ma stack :</p>
           <ul className="flex flex-wrap space-x-3 mb-6">
             <li className="flex items-center space-x-2 hover:animate-bounce">
               <svg
@@ -207,23 +207,23 @@ function Home() {
           </ul>
         </div>
         <div className="more-info opacity-0 py-4">
-          <p className="text-4xl mb-6">Voulez-vous en savoir plus ?</p>
+          <p className="text-4xl mb-6">Voulez-vous <span className="text-ghgreen">en savoir plus ?</span></p>
           <div className="flex flex-col text-lg font-medium mx-10">
             <Link
               to="about"
-              className="py-2 hover:scale-105 hover:font-bold transition-all"
+              className="py-2 hover:scale-105 hover:font-bold dark:hover:text-ghgreen transition-all"
             >
               À propos de moi
             </Link>
             <Link
               to="projects"
-              className="py-2 hover:scale-105 hover:font-bold transition-all"
+              className="py-2 hover:scale-105 hover:font-bold dark:hover:text-ghgreen transition-all"
             >
               Mes projets
             </Link>
             <Link
               to="https://guillaume-robert-devweb.fr/online-resume/index.html"
-              className="py-2 hover:scale-105 hover:font-bold transition-all"
+              className="py-2 hover:scale-105 hover:font-bold dark:hover:text-ghgreen transition-all"
             >
               Mon CV
             </Link>

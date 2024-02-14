@@ -6,19 +6,19 @@ function Home() {
   return (
     <div className=" bg-ghgreen dark:bg-zinc-800 text-white">
       <div className="home_mainblock w-11/12 lg:w-3/4 py-6 mx-auto">
-        <p className="word-animation text-3xl  lg:text-7xl">
+        <p className="word-animation text-3xl lg:text-4xl xl:text-7xl">
           <span className="py-2">Bonjour, je suis <span className="dark:text-ghgreen inline-block">développeur web...</span></span>
         </p>
 
-        <p className="word-animation text-xl lg:text-4xl mb-8">
+        <p className="word-animation text-xl lg:text-2xl xl:text-4xl mb-8">
           <span>...et plus précisément développeur front end.</span>
         </p>
         <div className="stack-tech opacity-0 py-2 lg:py-4">
           <p className="text-2xl lg:text-4xl underline mb-8 dark:text-ghgreen">Ma stack :</p>
-          <ul className="flex flex-wrap justify-between lg:justify-normal lg:space-x-3 mb-6">
+          <ul className="flex flex-wrap justify-between xl:justify-normal xl:space-x-3 mb-6">
             <li className="flex items-center space-x-2 hover:animate-bounce">
               <svg
-                className="w-8 lg:w-16 mb-3 lg:mb-0"
+                className="w-8 lg:w-12 xl:w-16 mb-3 xl:mb-0"
                 fill="#ffffff"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -50,7 +50,7 @@ function Home() {
             </li>
             <li className="flex items-center space-x-2 hover:animate-bounce">
               <svg
-                className="w-8 lg:w-16 mb-3 lg:mb-0"
+                className="w-8 lg:w-12 xl:w-16 mb-3 xl:mb-0"
                 fill="#ffffff"
                 version="1.1"
                 xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@ function Home() {
             </li>
             <li className="flex items-center space-x-2 hover:animate-bounce">
               <svg
-                className="w-8 lg:w-16 mb-3 lg:mb-0"
+                className="w-8 lg:w-12 xl:w-16 mb-3 xl:mb-0"
                 fill="#ffffff"
                 viewBox="0 0 32 32"
                 version="1.1"
@@ -104,7 +104,7 @@ function Home() {
             </li>
             <li className="flex items-center space-x-2 hover:animate-bounce">
               <svg
-                className="w-8 lg:w-16 mb-3 lg:mb-0"
+                className="w-8 lg:w-12 xl:w-16 mb-3 xl:mb-0"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#ffffff"
@@ -126,7 +126,7 @@ function Home() {
             </li>
             <li className="flex items-center space-x-2 hover:animate-bounce">
               <svg
-                className="w-8 lg:w-16 mb-3 lg:mb-0"
+                className="w-8 lg:w-12 xl:w-16 mb-3 xl:mb-0"
                 fill="#ffffff"
                 viewBox="0 0 24 24"
                 xmlns="http://www.w3.org/2000/svg"
@@ -150,7 +150,7 @@ function Home() {
             </li>
             <li className="flex items-center space-x-2 hover:animate-bounce">
               <svg
-                className="bi bi-bootstrap-fill w-8 lg:w-16 mb-3 lg:mb-0"
+                className="bi bi-bootstrap-fill w-8 lg:w-12 xl:w-16 mb-3 xl:mb-0"
                 viewBox="0 0 16 16"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#ffffff"
@@ -171,7 +171,7 @@ function Home() {
             </li>
             <li className="flex items-center space-x-2 hover:animate-bounce">
               <svg
-                className="w-8 lg:w-16 mb-3 lg:mb-0"
+                className="w-8 lg:w-12 xl:w-16 mb-3 xl:mb-0"
                 viewBox="0 0 48 48"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="#ffffff"

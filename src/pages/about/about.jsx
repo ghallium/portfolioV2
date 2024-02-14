@@ -48,12 +48,12 @@ const [input, setInput] = useState("");
     <div className="bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-white">
     <div className="flex flex-col lg:flex-row w-full lg:w-3/4 mx-auto">
     <div className="about-image w-full h-48 overflow-hidden lg:h-auto opacity-0 lg:w-[1800px]">
-        <img src={imgGameBoy} className="object-cover object-right-bottom" alt="une game boy avec ma tête pixellisée"></img>
+        <img src={imgGameBoy} className="-mt-16 lg:mt-0" alt="une game boy avec ma tête pixellisée"></img>
       </div>
     <div className="about_container">
       <div className="about_info">
         <h2 className="about_title opacity-0 text-5xl font-light py-8 px-5">À <span className="text-ghgreen font-bold">propos</span></h2>
-        <div className="about_content w-10/12">
+        <div className="about_content w-11/12 lg:w-10/12">
           
           <div className="about_text opacity-0 mx-5">
             <p className="text-base lg:text-xl font-light mb-8">

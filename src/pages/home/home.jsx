@@ -6,7 +6,7 @@ function Home() {
   return (
     <div className=" bg-ghgreen dark:bg-zinc-800 text-white">
       <div className="home_mainblock w-11/12 lg:w-3/4 py-6 mx-auto">
-        <p className="word-animation text-3xl lg:text-7xl">
+        <p className="word-animation text-3xl  lg:text-7xl">
           <span className="py-2">Bonjour, je suis <span className="dark:text-ghgreen inline-block">développeur web...</span></span>
         </p>
 

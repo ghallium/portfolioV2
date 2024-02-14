@@ -33,7 +33,7 @@ function Projects() {
     <>
       <div className=" bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-100 py-5">
         <div className="flex flex-col lg:flex-row w-11/12 lg:w-3/4 mx-auto">
-          <div className="filters-area opacity-0 w-11/12 lg:w-1/12">
+          <div className="filters-area opacity-0 mb-3 lg:mb-0 w-11/12 mx-auto lg:mx-0 lg:w-1/12">
             <h2 className="uppercase mb-4">Filtres</h2>
             <ul className="flex flex-wrap lg:flex-col">
               <li className="flex">
@@ -92,18 +92,18 @@ function Projects() {
                 />
                 <label className="mx-2">Sass</label>
               </li>
-              {/* Ajoutez des gestionnaires pour les autres checkboxes */}
+              {/* Ajouter des gestionnaires pour les autres checkboxes */}
             </ul>
           </div>
-          <div className="projects-area w-11/12">
+          <div className="projects-area w-11/12 mx-auto lg:mx-0">
             <h2 className="text-5xl opacity-0 font-light py-3 mb-6 mx-0 lg:mx-14">
               Pr<span className="text-ghgreen font-bold">ojets</span>
             </h2>
-            <div className="projects-container opacity-0 w-full mx-0 lg:mx-14 flex flex-wrap items-center">
+            <div className="projects-container opacity-0 mx-0 lg:mx-14 flex flex-col justify-center items-center md:flex-row md:flex-wrap md:justify-start">
               {filteredProjects.map((p) => (
                 <Link key={p.id} to={`/projet/${p.id}`}>
                   <div
-                    className="project-card hover:scale-105 transition-all w-[390px] h-[235px] rounded-md mb-3 mr-3 relative"
+                    className="project-card hover:scale-105 transition-all w-[300px] h-[157px] lg:w-[390px] lg:h-[235px] mx-auto md:mx-0 rounded-md mb-3 mr-0 md:mr-3 relative"
                     style={{
                       backgroundImage: `linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%), url(${p.cover})`,
                     }}

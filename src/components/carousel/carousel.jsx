@@ -22,12 +22,12 @@ export default function Carousel() {
         <div className="carousel_container">  
           <div className="slider relative">
           {images.length > 1 && (
-            <div className="vectorPrev bg-zinc-800 dark:bg-zinc-100 p-1 rounded-md text-5xl absolute top-56 left-2 cursor-pointer" onClick={prevSlide}>
+            <div className="vectorPrev bg-zinc-800 dark:bg-zinc-100 p-1 rounded-md text-xl md:text-3xl lg:text-5xl absolute top-24 md:top-36 lg:top-56 left-2 cursor-pointer" onClick={prevSlide}>
               <i className="fa-sharp fa-solid fa-arrow-left text-zinc-100 dark:text-zinc-700"></i>
             </div>
           )}
           {images.length > 1 && (
-            <div className="vectorNext bg-zinc-800 dark:bg-zinc-100 p-1 rounded-md text-5xl absolute top-56 right-2 cursor-pointer" onClick={nextSlide}>
+            <div className="vectorNext bg-zinc-800 dark:bg-zinc-100 p-1 rounded-md text-xl md:text-3xl lg:text-5xl absolute top-24 md:top-36 lg:top-56 right-2 cursor-pointer" onClick={nextSlide}>
               <i className="fa-sharp fa-solid fa-arrow-right text-zinc-100 dark:text-zinc-700"></i>  
             </div>
           )}
@@ -38,7 +38,7 @@ export default function Carousel() {
                 <img
                   src={img}
                   alt="Photos du logement"
-                  className="slider-image"
+                  className="slider-image bg-ghgreen object-cover lg:min-h-[700px]"
                 />
               )}
               {index === current && (

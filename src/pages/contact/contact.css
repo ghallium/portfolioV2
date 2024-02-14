@@ -26,7 +26,7 @@ form {
 }
 
 .email-icon {
-    animation: slide-out-down 0.50s ease-out forwards;
+    animation: fadeInZoom 0.50s ease-out forwards;
     animation-delay: 1.1s;
 }
 

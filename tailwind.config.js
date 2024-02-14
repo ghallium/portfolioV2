@@ -10,6 +10,10 @@ export default {
         'ghgreen': '#0aa593',
         'ghgrey': '#707070',
       },
+      screens: {
+        'iphonepro': '390px',
+        'laptop': '1024px'
+      },
       width: {
         'big': '700px',
       },

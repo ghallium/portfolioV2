@@ -26,15 +26,15 @@ function Header() {
               </Link>
             </div>
             <div
-                className="nav-links text-lg duration-500 z-10 md:static absolute bg-white dark:bg-zinc-900 md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                className="nav-links text-lg duration-500 z-10 lg:static absolute mt-1 iphonepro:-mt-2 bg-white dark:bg-zinc-900 lg:min-h-fit min-h-[60vh] md:min-h-[10vh] left-0 top-[-100%] md:justify-end lg:w-auto  w-full flex items-center px-5">
                 <ul className="flex uppercase md:flex-row flex-col md:items-center md:gap-[4vw] gap-8">
                     <li><Link to="/about" className="hover:text-ghgreen hover:font-medium transition-all active:text-ghgreen focus:text-ghgreen">à propos</Link></li>
                     <li><Link to="/projects" className="hover:text-ghgreen hover:font-medium transition-all active:text-ghgreen focus:text-ghgreen">projets</Link></li>
                     <li><Link to="/contact" className="hover:text-ghgreen hover:font-medium transition-all active:text-ghgreen focus:text-ghgreen">contact</Link></li>
                 </ul>
             </div>
-            <div>
-              <ion-icon onClick={(e) => onToggleMenu(e)} name="menu" className="w-16 text-3xl cursor-pointer md:hidden"></ion-icon>
+            <div className="lg:hidden">
+              <ion-icon onClick={(e) => onToggleMenu(e)} name="menu" className="cursor-pointer"></ion-icon>
 
             </div>
           </nav>    

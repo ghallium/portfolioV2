@@ -27,11 +27,11 @@ export default function Projet() {
     return (
       <>
         <div className="bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-100">
-          <div className="project_pageblock flex w-full lg:w-3/4 mx-auto">
+          <div className="project_pageblock flex flex-col lg:flex-row w-full lg:w-3/4 mx-auto">
             <div className="carousel_area opacity-0">
               <Carousel />
             </div>
-            <div className="projectcontents_area mx-0 lg:mx-5">
+            <div className="projectcontents_area w-11/12 mx-auto lg:mx-5">
               <h2 className="text-5xl opacity-0 py-4 text-ghgreen">
                 {foundProject.title}
               </h2>
@@ -79,7 +79,7 @@ export default function Projet() {
                   </a>
                 ) : null}
               </div>
-              <div className="next-previous-back-projects opacity-0 text-sm font-bold uppercase flex justify-between items-center">
+              <div className="next-previous-back-projects opacity-0 text-xs mb-4 lg:text-sm font-bold uppercase flex justify-between items-center">
                 <div className="previous hover:text-ghgreen transition-all">
                   <i className="fa-solid fa-circle-arrow-left"></i>
                   <Link to={`/projet/${previousProject.id}`} className="mx-1">

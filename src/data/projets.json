@@ -1,16 +1,17 @@
 [
     {
         "id": "pro0005",
-        "github_link": "https://github.com/ghallium/zeldaKaboomDemo",
-        "project_url": "https://ghallium.github.io/zeldaKaboomDemo/",
+        "github_link": "https://github.com/ghallium/SpotifyLanding",
+        "project_url": "https://guillaume-robert-devweb.fr/spotifyLanding/index.html",
         "title": "Landing page Spotify",
-        "description": "Développer son propre jeu vidéo... un doux rêve, n'est-ce pas ? En accumulant de l'expérience avec Javascript, et parce que développer des jeux est un excellent moyen d'apprendre, j'ai eu envie de m'essayer au développement de jeu en travaillant sur quelques prototypes. Etant un grand fan de la saga de jeux Zelda, j'ai commencé à réfléchir à comment créer mon propre clone. A l'heure actuelle, le prototype comporte 4 maps de type donjon, il est possible de tuer les ennemis avec une épée et une sorte de bâton de feu et d'ouvrir des portes, mais il reste encore beaucoup de travail à faire. Ce prototype utilise le framework Kaboom.js.",
-        "status": "work in progress",
+        "description": "N'ayant jusqu'ici pas réalisé de landing-pages, j'ai souhaité y remédier en répliquant celle d'un service que plusieurs millions d'utilisateurs et moi utilisons chaque jour: Spotify ! La page est conçue avec Vite + React et Tailwind CSS, elle est entièrement responsive et reprend le layout de l'originale bien que quelques légères différences soient à signaler au niveau du menu et des éléments graphiques (usage de font propriétaire remplacée par DM Sans et remplacement du visuel en haut à droite de la homepage).",
+        "status": "terminé",
         "type_projet": "Projet réel",
-        "cover": "http://guillaume-robert-devweb.fr/miniatures_projets/min-zelda-kaboom.webp",
+        "cover": "https://guillaume-robert-devweb.fr/miniatures_projets/min-pro-spotify.png",
         "images" : [
-            "https://guillaume-robert-devweb.fr/src/assets/images/pro04-01.webp",
-            "https://guillaume-robert-devweb.fr/src/assets/images/pro04-02.webp"
+            
+            "https://guillaume-robert-devweb.fr/src/assets/images/spotifylanding-mockup-desktop.webp",
+            "https://guillaume-robert-devweb.fr/src/assets/images/spotifylanding-mockup-mobile.webp"
         ],
         "tags" : [
             "Javascript",
@@ -26,10 +27,10 @@
         "github_link": "https://github.com/ghallium/zeldaKaboomDemo",
         "project_url": "https://ghallium.github.io/zeldaKaboomDemo/",
         "title": "Jeu javascript Kaboom",
-        "description": "Développer son propre jeu vidéo... un doux rêve, n'est-ce pas ? En accumulant de l'expérience avec Javascript, et parce que développer des jeux est un excellent moyen d'apprendre, j'ai eu envie de m'essayer au développement de jeu en travaillant sur quelques prototypes. Etant un grand fan de la saga de jeux Zelda, j'ai commencé à réfléchir à comment créer mon propre clone. A l'heure actuelle, le prototype comporte 4 maps de type donjon, il est possible de tuer les ennemis avec une épée et une sorte de bâton de feu et d'ouvrir des portes, mais il reste encore beaucoup de travail à faire. Ce prototype utilise le framework Kaboom.js.",
-        "status": "work in progress",
+        "description": "Développer son propre jeu vidéo... un doux rêve, n'est-ce pas ? En accumulant de l'expérience avec Javascript, et parce que développer des jeux est un excellent moyen d'apprendre, j'ai eu envie de m'essayer au développement de jeu en travaillant sur quelques prototypes. Etant un grand fan de la saga de jeux Zelda, j'ai commencé à réfléchir à comment créer mon propre clone et pu réussir à faire fonctionner ce petit prototype. Il comporte 4 maps de type donjon et il est actuellement possible de tuer les ennemis avec une épée et une sorte de bâton de feu ainsi que d'ouvrir des portes. Tous les assets sont tirés du jeu The Legend of Zelda sorti sur NES et Famicom en 1986. ",
+        "status": "prototype terminé",
         "type_projet": "Projet réel",
-        "cover": "http://guillaume-robert-devweb.fr/miniatures_projets/min-zelda-kaboom.webp",
+        "cover": "https://guillaume-robert-devweb.fr/miniatures_projets/min-zelda-kaboom.webp",
         "images" : [
             "https://guillaume-robert-devweb.fr/src/assets/images/pro04-01.webp",
             "https://guillaume-robert-devweb.fr/src/assets/images/pro04-02.webp"

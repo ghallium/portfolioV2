@@ -12,7 +12,8 @@ function Footer() {
                     <a href="https://www.linkedin.com/in/guill-robert" target="_blank" rel="noreferrer"><i className="fa-brands fa-linkedin text-3xl hover:text-ghgreen transition-all"></i></a>
                     <a href="https://www.github.com/ghallium" target="_blank" rel="noreferrer"><i className="fa-brands fa-github text-3xl hover:text-ghgreen transition-all"></i></a>
                 </div>
-                <p className="text-sm lg:text-base mb-4">Tous droits réservés</p> 
+                <p className="text-sm lg:text-base mb-4">Tous droits réservés</p>
+                {/* <a href="https://guillaume-robert-devweb.fr/old/v1/index.html" className="text-xs lg:text-sm mb-4">Consulter l'ancienne version</a>  */}
             </div>    
            
            

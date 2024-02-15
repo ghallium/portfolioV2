@@ -221,12 +221,12 @@ function Home() {
             >
               Mes projets
             </Link>
-            <Link
-              to="https://guillaume-robert-devweb.fr/online-resume/index.html"
+            <a
+              href="https://guillaume-robert-devweb.fr/online-resume/index.html"
               className="py-2 hover:scale-105 hover:font-bold dark:hover:text-ghgreen transition-all"
             >
               Mon CV
-            </Link>
+            </a>
           </div>
         </div>
       </div>

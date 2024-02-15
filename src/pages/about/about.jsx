@@ -46,12 +46,12 @@ const [input, setInput] = useState("");
   return (
     <>
     <div className="bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-white">
-    <div className="flex flex-col lg:flex-row w-full lg:w-3/4 mx-auto">
-    <div className="about-image w-full h-48 overflow-hidden lg:min-h-[600px] opacity-0 lg:w-[1800px]">
-        <img src={imgGameBoy} className="-mt-16 lg:mt-0" alt="une game boy avec ma tête pixellisée"></img>
+    <div className="flex flex-col xl:flex-row w-full xl:w-3/4 mx-auto">
+    <div className="about-image w-full h-48 lg:h-96 overflow-hidden xl:min-h-[600px] opacity-0 xl:w-[1800px]">
+        <img src={imgGameBoy} className="-mt-16 lg:-mt-96 xl:mt-0" alt="une game boy avec ma tête pixellisée"></img>
       </div>
     <div className="about_container">
-      <div className="about_info">
+      <div className="about_info lg:w-3/4 mx-auto xl:mx-0 xl:w-auto">
         <h2 className="about_title opacity-0 text-5xl font-light py-8 px-5">À <span className="text-ghgreen font-bold">propos</span></h2>
         <div className="about_content w-11/12 xl:w-10/12">
           

@@ -27,7 +27,7 @@ export default function Projet() {
     return (
       <>
         <div className="bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-100">
-          <div className="project_pageblock flex flex-col lg:flex-row w-full lg:w-3/4 mx-auto">
+          <div className="project_pageblock flex flex-col xl:flex-row w-full xl:w-3/4 mx-auto">
             <div className="carousel_area opacity-0">
               <Carousel />
             </div>

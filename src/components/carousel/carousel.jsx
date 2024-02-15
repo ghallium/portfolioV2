@@ -33,7 +33,7 @@ export default function Carousel() {
           )}
           {images.map((img, index) => {
           return (
-            <div className="slider_container w-full lg:w-[900px]" key={index}>
+            <div className="slider_container w-full xl:w-[900px]" key={index}>
               {index === current && (
                 <img
                   src={img}
